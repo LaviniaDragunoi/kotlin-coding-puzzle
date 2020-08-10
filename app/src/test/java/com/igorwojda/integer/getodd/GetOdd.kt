@@ -4,7 +4,11 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun filterOdd(list: List<Int>): List<Int> {
-    TODO("not implemented")
+    val oddList = mutableListOf<Int>()
+    for (i in list.indices){
+        if (list[i]%2 != 0) oddList.add(list[i])
+    }
+    return oddList
 }
 
 class GetOddNumbersTest {

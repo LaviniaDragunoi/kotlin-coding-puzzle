@@ -4,7 +4,11 @@ import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 private fun countDown(n: Int): List<Int> {
-    TODO("not implemented")
+    val countDownList = mutableListOf<Int>()
+    for (i in 0..n){
+        countDownList.add(n-i)
+    }
+    return countDownList
 }
 
 class CountDownTest {

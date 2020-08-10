@@ -3,9 +3,9 @@ package com.igorwojda.range.containsrange
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
-private fun containsRange(range1: IntRange, range2: IntRange): Boolean {
-    TODO("not implemented")
-}
+private fun containsRange(range1: IntRange, range2: IntRange): Boolean  =
+    range2.first in range1 && range2.last in range1
+
 
 class ContainsRangeTest {
     @Test
